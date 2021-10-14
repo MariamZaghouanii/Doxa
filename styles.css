@@ -65,6 +65,7 @@ body{
 }
 
 .info-button{
+  background-color: var(--soft-blue);
   border: hidden;
   font-size: 0.9em;
   font-weight: bold;
@@ -74,12 +75,11 @@ body{
   transition: box-shadow .3s;
   text-decoration: none;
   overflow: hidden;
-  box-shadow: inset 0 -2px 0 #EEEEEE70, 0 2px 0 #EEEEEE70;
-
+  box-shadow:none;
 }
 
 .info-button:hover{
-  box-shadow: inset 0 -30px 0 var(--primary-transparent-blue), 0 2px 0 var(--primary-transparent-blue);
+  box-shadow: inset 0 -50px 0 var(--primary-transparent-blue), 0 2px 0 var(--primary-transparent-blue);
 } 
 
 /* MEDIA QUERRIES */
