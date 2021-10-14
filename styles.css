@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body{
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+:root{
+  --color-dark: #393E46;
+  --primary-blue: #00ADB5;
+  --primary-transparent-blue: #00acb563;
+  --soft-blue: #AAD8D3;
+  --color-light: #EEEEEE;
+  --radius: 23px;
+}
+
+/*FIRST SECTION*/
+
+.section-one {
+  background: url("./assets/bg2.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  }
+
+.container{
+  padding: 0px !important;
+}
+
+.intro{
+  padding: 0rem 1.5rem;
+  font-size: 1.8em;
+  color: var(--color-dark) !important;
+  height: 35vw;
+  background-color: #EEEEEE78  ;
+  border-top-right-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+}
+
+#logo{
+  height: 35vw;
+  width: auto;
+  border-bottom-left-radius: var(--radius);
+  border-top-left-radius: var(--radius);
+}
+
+.title{
+  font-size: 2em;
+  width: fit-content;
+  transition: box-shadow .3s;
+  text-decoration: none;
+  box-shadow: inset 0 -2px 0 var(--primary-transparent-blue), 0 2px 0 var(--primary-transparent-blue);
+  overflow: hidden;
+}
+
+.title:hover{
+  box-shadow: inset 0 -30px 0 var(--primary-transparent-blue), 0 2px 0 var(--primary-transparent-blue);
+}
+
+.description{
+  font-size: 0.9em;
+}
+
+.info-button{
+  border: hidden;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: var(--color-dark);
+  padding: 0.2em 1.2em;
+  width: fit-content;
+  transition: box-shadow .3s;
+  text-decoration: none;
+  overflow: hidden;
+  box-shadow: inset 0 -2px 0 #EEEEEE70, 0 2px 0 #EEEEEE70;
+
+}
+
+.info-button:hover{
+  box-shadow: inset 0 -30px 0 var(--primary-transparent-blue), 0 2px 0 var(--primary-transparent-blue);
+} 
+
+/* MEDIA QUERRIES */
+
+@media (max-width: 1200px) {
+  .title{
+    font-size: 1.7em;
+  }
+
+  .description{
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 1000px){
+  .container{
+    flex-direction: column;
+  }
+
+  .intro, #logo{
+    width: 55vw;
+    height: auto;
+  }
+
+  .intro{
+    border-radius: 0px 0px var(--radius) var(--radius) ;
+    padding: 1.5rem;
+  }
+
+  #logo{
+    border-radius: var(--radius) var(--radius) 0px 0px;
+  }
+}
+
+@media (max-width: 750px){ 
+  .intro, #logo{
+    width: 70vw;
+  }
+}
+
+@media (max-width: 500px){
+  .intro, #logo{
+    width: 90vw;
+  }
+}
