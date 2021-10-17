@@ -18,7 +18,7 @@ body{
 /*FIRST SECTION*/
 
 .section-one {
-  background: url("./assets/bg2.png") no-repeat center center fixed; 
+  background: url("./assets/backgrounds/bg2.png") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -86,6 +86,7 @@ body{
 
 .second-section{
   background-color: #EEEEEE78;
+  min-height: 100vh;
 }
 
 #activity-img{
