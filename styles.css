@@ -85,13 +85,34 @@ body{
 /* SECOND SECTION */
 
 .second-section{
-  background-color: #EEEEEE78;
+  background: url("./assets/backgrounds/light-blue-bg.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   min-height: 100vh;
+  color: var(--color-dark);
+}
+
+.activities-title{
+  margin: 4rem auto;
+}
+
+.activities-title>h1{
+  box-shadow: inset 0 -50px 0 var(--soft-blue), 0 2px 0 var(--soft-blue);
+  display: inline;
+  font-size: 4.5em;
+}
+
+.activtity-description>p{
+  font-size: 1.6rem;
+
 }
 
 #activity-img{
-  width: 90%;
+  width: 99%;
   height: auto;
+  margin: 2rem auto;
 }
 
 /* MEDIA QUERRIES */
@@ -135,5 +156,12 @@ body{
 @media (max-width: 500px){
   .intro, #logo{
     width: 90vw;
+  }
+}
+
+@media (max-width: 550px){
+  .activities-title>h1{
+    font-size: 3.1rem;
+    box-shadow: inset 0 -30px 0 var(--soft-blue);
   }
 }
