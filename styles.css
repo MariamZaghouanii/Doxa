@@ -99,13 +99,20 @@ body{
 }
 
 .activities-title>h1{
-  box-shadow: inset 0 -50px 0 var(--soft-blue), 0 2px 0 var(--soft-blue);
+  box-shadow: inset 0 -35px 0 var(--soft-blue), 0 2px 0 var(--soft-blue);
   display: inline;
   font-size: 4.5em;
+  transition: box-shadow;
+  transition-duration: 0.3s;
+}
+
+.activities-title>h1:hover{
+  box-shadow: inset 0 -50px 0 var(--soft-blue), 0 2px 0 var(--soft-blue);
+
 }
 
 .activtity-description>p{
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 
 }
 
@@ -115,7 +122,58 @@ body{
   margin: 2rem auto;
 }
 
+/* THIRD SECTION */
+
+.third-section{
+  text-transform: uppercase;
+}
+
+
+.discord, .social-media{
+  min-height: 100vh;
+  padding: 0px !important;
+}
+
+.discord{
+  background-color: var(--color-dark);
+  color: var(--soft-blue);
+}
+
+.social-media{
+  background-color: var(--soft-blue);
+  color: var(--color-dark);
+}
+
+.piece>img{
+  width: 15%;
+  height: auto;
+
+}
+
+/* .discord-invite{
+  height: 150px;
+  width: 150px;
+  border-radius: var(--radius);
+  border: #AAD8D3 5px solid;
+  transition-duration: 0.1s;
+}
+
+.discord-invite:hover{
+  border: dotted;
+}
+*/
+.discord-invite>img{
+  height: 20% !important;
+  width: auto;
+} 
+
 /* MEDIA QUERRIES */
+
+@media (min-width: 1200px){
+.second-section>.container {
+    max-width: 1200px;
+}
+}
 
 @media (max-width: 1200px) {
   .title{
@@ -163,5 +221,11 @@ body{
   .activities-title>h1{
     font-size: 3.1rem;
     box-shadow: inset 0 -30px 0 var(--soft-blue);
+  }
+}
+
+@media (max-width: 960px){
+  .third-section{
+    flex-direction: column;
   }
 }
